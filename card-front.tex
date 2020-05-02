@@ -1,0 +1,81 @@
+% !TEX TS-program = xelatex
+
+\documentclass[12pt, oneside, final]{article}
+
+% set all margins to 0 and set business card size
+\usepackage[
+  paperwidth = 3.5in,
+  paperheight = 2in,
+  margin = 0.2in,
+  noheadfoot
+]{geometry}
+
+% interline spacing
+\setlength{\baselineskip}{0cm} % between baselines
+\setlength{\topskip}{0pt}      % between header and text block
+
+\usepackage{tikz}
+\usepackage{parskip}           % remove paragraph indents
+\usepackage{graphicx}
+
+% wrapping text around figure
+\usepackage{wrapfig}
+
+% fonts
+% \usepackage{ebgaramond}
+\usepackage[scaled = 1]{FiraSans}                % sans
+\usepackage[varqu, scaled = 1]{zi4}             % mono w/ straight quotes
+% \usepackage{inconsolata}
+\usepackage{fontawesome}                           % FA icons
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% \usepackage{fontspec}        % load external fonts
+% \usepackage{fontspec}        % load external fonts
+% \usepackage{tikz}            % drawing
+% \usepackage{xcolor}          % more colour options
+% % load external font
+% \setmainfont{Fira Sans}
+% \setsansfont{Fira Sans}
+% \setmonofont[Scale=0.8]{varqu}
+% \setmonofont{Consolas}
+
+% \newcommand\logosize{0.25}
+\newlength{\logowidth}  \setlength{\logowidth}{0.75in}
+
+
+\begin{document}
+
+  \thispagestyle{empty}
+  
+%   \begin{wrapfigure}{R}{\logosize\textwidth}
+    % \includegraphics[width = \logosize\textwidth]{figures/self-pixel-circle.png}
+%   \end{wrapfigure}
+
+    \begin{tikzpicture}[remember picture,overlay,inner sep=0pt]
+        % icon
+        \draw (current page.center) ++ (\paperwidth/2 - \logowidth, 0) node (helper logo) {};
+        \node[anchor=south] at (helper logo) {\includegraphics[width=\logowidth]{figures/self-pixel-circle.png}};
+    \end{tikzpicture}
+
+
+  \underline{\large\textsf{\textbf{Matthew Sheehan}}}
+
+  \textmd{\small{Software Engineer}}
+
+  \vfill
+
+  \vspace*{\fill}
+  {\footnotesize{\faEnvelope}} \texttt{dev@mattsheehan.me}
+
+  \vspace*{\fill}
+  {\footnotesize{\faPhone}} \texttt{330{\textendash}614{\textendash}1599}
+
+  \vspace*{\fill}
+  {\footnotesize{\faGlobe}} \texttt{mattsheehan.dev}
+
+  \vspace*{\fill}
+  {\footnotesize{\faGithub}} \texttt{MattSheehanDev}
+
+\end{document}
