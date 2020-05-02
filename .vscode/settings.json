@@ -1,6 +1,7 @@
 {
     "files.exclude": {
         "**/*.aux": true,
-        "**/*.synctex.gz": true
+        "**/*.synctex.gz": true,
+        "**/__latexindent_temp.tex": true
     }
 }

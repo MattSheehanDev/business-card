@@ -52,17 +52,13 @@
   \begin{tikzpicture}[remember picture,overlay,inner sep=0pt]
     % background
     \draw[fill=bordercolour!40,draw=bordercolour] (current page.center) ++(-\paperwidth/2,\paperheight/2) rectangle ++(\paperwidth,-\paperheight);
-    % \draw[fill=bordercolour!40,draw=bordercolour] (current page.center) ++(-\paperwidth/2+\edgemargin,\paperheight/2-\edgemargin) rectangle ++(\paperwidth-2*\edgemargin,-\paperheight+2*\edgemargin);
     
     % logo
     \draw (current page.center) ++ (- \logowidth/2 - \edgemargin, 0) node (helper logo) {};
     \node[anchor=east] at (helper logo) {\includegraphics[width=\logowidth]{figures/initials}};
 
     % qr code
-\draw (current page.center) 
-% - \paperwidth/2 + \edgemargin+ \paperheight/2 - \edgemargin - \qrwidth/2
-    ++ (\paperwidth/2 - \edgemargin - \qrwidth/2, 0) 
-    node (helper qr) {};
+    \draw (current page.center) ++ (\paperwidth/2 - \qrwidth/2, 0) node (helper qr) {};
 
     \node[anchor=east] at (helper qr) 
         {\qrcode[level=M,height=\qrwidth]{BEGIN:VCARD
