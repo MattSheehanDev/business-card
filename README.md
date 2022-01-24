@@ -7,7 +7,7 @@
 - [Fira Sans Font](https://github.com/mozilla/Fira)
 
 Heavily influenced by,
-- https://github.com/opieters/business-card
+- 
 - https://github.com/mikedecr/latex-business-card
 
 ## Preview

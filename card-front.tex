@@ -53,11 +53,15 @@
     % \includegraphics[width = \logosize\textwidth]{figures/self-pixel-circle.png}
 %   \end{wrapfigure}
 
-    \begin{tikzpicture}[remember picture,overlay,inner sep=0pt]
-        % icon
-        \draw (current page.center) ++ (\paperwidth/2 - \logowidth, 0) node (helper logo) {};
-        \node[anchor=south] at (helper logo) {\includegraphics[width=\logowidth]{figures/self-pixel-circle.png}};
-    \end{tikzpicture}
+    % \begin{tikzpicture}[remember picture,overlay,inner sep=0pt]
+    %     % icon
+    %     \draw (current page.center) ++ (\paperwidth/2 - \logowidth, 0) node (helper logo) {};
+    %     \node[anchor=south] at (helper logo) {\includegraphics[width=\logowidth]{figures/self-pixel-circle.png}};
+    % \end{tikzpicture}
+
+    \begin{wrapfigure}{r}{0.3\textwidth}
+        \includegraphics[width = 0.3\textwidth]{figures/self-pixel-circle.png}
+    \end{wrapfigure}
 
 
   \underline{\large\textsf{\textbf{Matthew Sheehan}}}
@@ -67,15 +71,15 @@
   \vfill
 
   \vspace*{\fill}
-  {\footnotesize{\faPhone}} \texttt{330{\textendash}614{\textendash}1599}
+  {\footnotesize{\faPhone}} \small{\texttt{330{\textendash}614{\textendash}1599}}
 
   \vspace*{\fill}
-  {\footnotesize{\faEnvelope}} \texttt{matt-sheehan@outlook.com}
+  {\footnotesize{\faEnvelope}} \small{\texttt{matt-sheehan@outlook.com}}
 
   \vspace*{\fill}
-  {\footnotesize{\faGlobe}} \texttt{mattsheehan.dev}
+  {\footnotesize{\faGlobe}} \small{\texttt{mattsheehan.dev}}
 
   \vspace*{\fill}
-  {\footnotesize{\faGithub}} \texttt{MattSheehanDev}
+  {\footnotesize{\faGithub}} \small{\texttt{MattSheehanDev}}
 
 \end{document}
