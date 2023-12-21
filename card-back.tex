@@ -35,7 +35,7 @@
 \newlength{\logowidth}  \setlength{\logowidth}{0.75in}
 
 % define colours
-\definecolor{bordercolour}{HTML}{ff9933} % green
+\definecolor{bordercolour}{HTML}{e89361} % orange
 \definecolor{textcolour}{HTML}{000000}   % black
 
 % change global colour
@@ -51,7 +51,8 @@
   \vspace*{\fill}
   \begin{tikzpicture}[remember picture,overlay,inner sep=0pt]
     % background
-    \draw[fill=bordercolour!40,draw=bordercolour] (current page.center) ++(-\paperwidth/2,\paperheight/2) rectangle ++(\paperwidth,-\paperheight);
+    \draw[fill=bordercolour!80,draw=bordercolour] (current page.center) ++(-\paperwidth/2,\paperheight/2) rectangle ++(\paperwidth,-\paperheight);
+    % \draw[fill=bordercolour!40,draw=bordercolour] (current page.center) ++(-\paperwidth/2,\paperheight/2) rectangle ++(\paperwidth,-\paperheight);
     
     % logo
     \draw (current page.center) ++ (- \logowidth/2 - \edgemargin, 0) node (helper logo) {};

@@ -5,9 +5,10 @@
 - XeLaTeX
 - [Font Awesome](https://github.com/xdanaux/fontawesome-latex)
 - [Fira Sans Font](https://github.com/mozilla/Fira)
+- VS Code LaTeX Workshop Extension (optional, but useful)
 
 Heavily influenced by,
-- 
+
 - https://github.com/mikedecr/latex-business-card
 
 ## Preview
